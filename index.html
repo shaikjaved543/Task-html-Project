@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+       <script>
+function validateForm() {
+  var password = document.forms["myForm"]["fname"].value;
+  if (password == "") {
+    alert("Incorrret username or password");
+     return false;
+  }
+    
+}
+</script>
+      
+       <meta charset="utf-8">
+        <title>LOGIN PAGE</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+    </head>
+        
+    <body>
+    
+     <div class="login-box">
+        
+         <h1>Login</h1>
+          <div class="textbox">
+          <i class="fa fa-user" aria-hidden="true"></i>
+          
+          <input type="text" placeholder="Username" name="fname" value=""> 
+        
+    </div>
+    
+    <div class="textbox">
+    <i class="fa fa-lock" aria-hidden="true"></i>
+    
+    
+    <input type="password" placeholder="password" name="fname" value="">
+    
+    </div>
+    
+    <form name="myForm" onSign in="return validateForm()" method="post">
+    <a href="page.html" target="_blank">
+    <input class="btn" type="button" name="fname" required value="Sign in">
+        </a>
+         </form>
+     </div>
+    
+     
+    </body>
+</html>
